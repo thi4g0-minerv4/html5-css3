@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: 'Sriracha';
+    --fonte2: 'Passion One';
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* HEADER */
+header {
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+header h1 {
+    padding-top: 50px;
+    font-size: 10vw;
+    font-family: var(--fonte2);
+    font-weight: 700;
+    font-variant: small-caps;
+}
+header p {
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+/* MAIN */
+main {
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+}
+main section {
+    padding: 72px 30px ;
+    line-height: 2em;
+}
+
+main section.imagem {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center right;
+
+}
+main section.imagem p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.816);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.325);
+}
+
+main section.bug {
+    background-image: url('../imagens/background001.jpg');
+}
+main section.paper {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
