@@ -1,0 +1,140 @@
+<!-- Esse exercício é um teste de Parallax-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Parallax</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        strong {
+            color: rgb(143, 57, 223);
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Roboto Condensed';
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        header h1{
+            font-family: 'Pirata One';
+            font-size: 4em;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+            font-size: 1.2em;
+        }
+        a:hover {
+            color: rgb(143, 57, 223);
+        }
+        header ul {
+            columns: 4;
+            list-style-type: none;
+            padding-bottom: 30px;
+        }
+        header p {
+            padding-bottom: 30px;
+        }
+
+        main {
+            
+            font-family: 'Roboto Condensed';
+        }
+        main h2 {
+            margin-bottom: 20px;
+            font-family: 'Pirata One';
+            font-size: 2.2em;
+        }
+        main p {
+            max-width: 1000px;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            text-indent: 20px;
+            text-align: justify;
+        }
+        main article {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        main section {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            background-image: url('imagens/fundo-roxo.jpg');
+            background-attachment: fixed;
+        }
+        main section img {
+            margin: auto;
+            width: 70%;
+            display: block;
+            min-width: 100px;
+            max-width: 700px;
+            
+        }
+        footer {
+            background-color: black;
+            color: white;
+            font-family: 'Roboto Condensed';
+            padding: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tecnologias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+        </nav>
+        <h1>Pirate World</h1>
+        <p>Explore as novas tecnologias de <strong>CyberSecurity</strong> para navegar nesse mar de piratas!</p>
+    </header>
+    <main>
+        <article>
+            <h2>Tecnologias</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum assumenda eos quis! Non, soluta dolorum itaque, repudiandae architecto inventore earum vel autem repellendus tempora voluptatem, alias aliquam maxime mollitia.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro esse ipsum illum earum quos corporis debitis consequatur corrupti, repellendus deserunt odio aliquam sit ullam laudantium sapiente perferendis tenetur vero deleniti.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laudantium eligendi, labore officiis nulla enim fugit, mollitia nihil sed voluptatem cumque asperiores ea modi repellendus obcaecati doloribus maiores quaerat facilis!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam debitis excepturi consequuntur nihil dicta omnis culpa eius? Nisi eius voluptatibus itaque inventore iusto, odio recusandae, earum amet mollitia, omnis laborum.
+            </p>
+        </article>
+        <section>
+            <img src="imagens/logo-pirata-removebg-preview.png" alt="Logo pirata">
+        </section>
+        <article>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel in veritatis voluptatibus pariatur officia laborum, praesentium doloribus? At expedita facilis, voluptatem quas perferendis, nemo tenetur impedit eligendi aut fuga rem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolorem deserunt cupiditate suscipit voluptatibus, ea corrupti voluptate excepturi ipsam est eaque voluptatem iusto ducimus veniam harum obcaecati ipsum sequi fuga?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae maiores dolore molestiae perspiciatis recusandae consequuntur, eius omnis dolores nihil doloribus ratione aperiam eaque veritatis vel cum ex similique fuga unde?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos magni! Ex reprehenderit reiciendis aliquid ad veritatis, accusantium, vel dignissimos quis optio beatae a quasi iusto provident dolor maxime placeat?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime numquam consequatur deleniti exercitationem ipsa vitae aspernatur, illo, enim tempore quo, repudiandae voluptatibus! Tenetur labore ab aut laborum nam officiis quis.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore repellat illo ipsam, impedit adipisci fuga perferendis alias unde voluptatem. Atque dolore excepturi voluptatibus possimus ipsum totam dicta reprehenderit? Consequuntur, excepturi?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique eum, rerum temporibus tenetur dolor repudiandae. Quis ex cupiditate ratione officia, incidunt adipisci, quam culpa, necessitatibus minima obcaecati magni modi possimus.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium minus omnis, fugiat nostrum aspernatur quibusdam atque tempora inventore reprehenderit, magni deserunt ipsum saepe optio similique ipsam itaque deleniti. Quod, voluptas?
+            </p>
+        </article>
+    </main>
+    <footer>
+        <p>Site feito por <a href="https://github.com/thi4g0-minerv4" target="_blank">Thi4g0 Minerv4</a>.</p>
+    </footer>
+</body>
+</html>
