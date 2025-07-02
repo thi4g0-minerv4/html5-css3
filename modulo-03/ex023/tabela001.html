@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+
+            /* Border collapse único de <table>, só aceita SEPARATE (padrão) e COLLAPSE*/
+            border-collapse: collapse;
+        }
+        tr.linha {
+            background-color: rgba(69, 69, 69, 0.932);
+            color: white;
+        }
+        td {
+            padding: 8px;
+            border: 2px solid black;
+        }
+        td.dado-importante {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!--
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW = linha de tabela
+                TABLE HEADER =  cabeçalho de tabela
+                TABLE DATA = dado de tabela
+    -->
+    <table>
+        <tr class="linha"> 
+            <td>A1
+            <td>B1
+            <td>C1
+
+        <tr>
+            <td>A2
+            <td>B2
+            <td>C2 
+
+        <tr>
+            <td>A3
+            <td>B3
+            <td>C3 
+                 
+        <tr>
+            <td>A4
+            <td class="dado-importante">B4
+            <td>C4  
+    </table>
+</body>
+</html>
