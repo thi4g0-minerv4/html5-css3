@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            table-layout: fixed;
+            font-size: 1em;
+        }
+        th, td {
+            border: 1px solid #A2A9B1;
+            padding: 3.2px 6.4px;
+            text-align: right;
+        }
+        thead th {
+            background-color: #EAECF0;
+            padding: 10px;
+            text-align: center;
+        }
+        tbody td {
+            background: #F8F9FA;
+        }
+        table .estado {
+            text-align: left;
+        }
+        table .pais {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de células</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Unidade Federativa</th>
+                <th colspan="2">População</th>
+                <th colspan="2">Variação (2010- 2023)</th>
+                <th rowspan="2">% Total (2024)</th>
+                <th rowspan="2">País comparável (habitantes)</th>
+            </tr>
+            <tr>
+                <th>2024 (est.) </th>
+                <th>2022</th>
+                <th>%</th>
+                <th>Abs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="estado">São Paulo</td>
+                <td>45 973 194</td>
+                <td>44 411 238</td>
+                <td>7,63%</td>
+                <td>3 149 039</td>
+                <td>21,63%</td>
+                <td class="pais">Iraque <br>(46 042 015)</td>
+            </tr>
+            <tr>
+                <td class="estado">Minas Gerais</td>
+                <td>21 322 691</td>
+                <td>20 539 889</td>
+                <td>4,81%</td>
+                <td>942 659</td>
+                <td>10,03%</td>
+                <td class="pais">Zâmbia <br>(21 314 956)</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio de Janeiro</td>
+                <td>17 219 679</td>
+                <td>16 055 174</td>
+                <td>0,41%</td>
+                <td>65 245</td>
+                <td>8,10%</td>
+                <td class="pais">Camboja <br>(17 638 801)</td>
+            </tr>
+            <tr>
+                <td class="estado">Bahia</td>
+                <td>14 850 513</td>
+                <td>14 141 626</td>
+                <td>0,89%</td>
+                <td>124 720</td>
+                <td>6,99%</td>
+                <td class="pais">Guiné <br>(14 754 785)</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraná</td>
+                <td>11 824 665</td>
+                <td>11 444 380</td>
+                <td>9,57%</td>
+                <td>999 854</td>
+                <td>5,56%</td>
+                <td class="pais">Haiti <br>(11 772 557)</td>
+            </tr>
+            <tr>
+                <td class="estado">Rio Grande do Sul</td>
+                <td>11 229 915</td>
+                <td>10 882 965</td>
+                <td>1,77%</td>
+                <td>189 036</td>
+                <td>5,28%</td>
+                <td class="pais">República Dominicana <br>(11 427 557)</td>
+            </tr>
+            <tr>
+                <td class="estado">Pernambuco</td>
+                <td>9 539 029</td>
+                <td>9 058 931</td>
+                <td>2,98%</td>
+                <td>262 483</td>
+                <td>4,49%</td>
+                <td class="pais">Togo <br>(9 515 236)</td>
+            </tr>
+            <tr>
+                <td class="estado">Ceará</td>
+                <td>9 233 656</td>
+                <td>8 794 957</td>
+                <td>4,05%</td>
+                <td>342 576</td>
+                <td>4,34%</td>
+                <td class="pais">Áustria <br>(9 120 813)</td>
+            </tr>
+            <tr>
+                <td class="estado">Pará</td>
+                <td>8 664 306</td>
+                <td>8 120 131</td>
+                <td>7,11%</td>
+                <td>539 080</td>
+                <td>4,08%</td>
+                <td class="pais">Serra Leoa <br>(8 642 022)</td>
+            </tr>
+            <tr>
+                <td class="estado">Santa Catarina</td>
+                <td>8 058 441</td>
+                <td>7 610 361</td>
+                <td>21,80%</td>
+                <td>1 361 925</td>
+                <td>3,79%</td>
+                <td class="pais">Laos <br>(7 769 819)</td>
+            </tr>
+            <tr>
+                <td class="estado">Goiás</td>
+                <td>7 350 483</td>
+                <td>7 056 495</td>
+                <td>17,53%</td>
+                <td>1 052 707</td>
+                <td>4,36%</td>
+                <td class="pais">Líbia <br>(7 381 023)</td>
+            </tr>
+            <tr>
+                <td class="estado">Maranhão</td>
+                <td>7 010 960</td>
+                <td>6 776 699</td>
+                <td>3,07%</td>
+                <td>201 910</td>
+                <td>3,30%</td>
+                <td class="pais">Paraguai <br>(6 929 153)</td>
+            </tr>
+            <tr>
+                <td class="estado">Amazonas</td>
+                <td>4 281 209</td>
+                <td>3 941 613</td>
+                <td>13,14%</td>
+                <td>457 628</td>
+                <td>2,01%</td>
+                <td class="pais">Panamá <br>(4 515 577)</td>
+            </tr>
+            <tr>
+                <td class="estado">Paraíba</td>
+                <td>4 145 040</td>
+                <td>3 974 687</td>
+                <td>5,53%</td>
+                <td>208 159</td>
+                <td>1,95%</td>
+                <td class="pais">Croácia <br>(3 875 325)</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+</html>

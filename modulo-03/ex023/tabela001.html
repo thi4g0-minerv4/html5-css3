@@ -10,25 +10,28 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 100%;
+            width: 80%;
+            height: 400px;
             max-width: 800px;
             margin: auto;
-            text-align: center;
+            
 
             /* Border collapse único de <table>, só aceita SEPARATE (padrão) e COLLAPSE*/
             border-collapse: collapse;
         }
-        tr.linha {
-            background-color: rgba(69, 69, 69, 0.932);
-            color: white;
-        }
         td {
             padding: 8px;
             border: 2px solid black;
+
+            /* Alinhamento Horizontal */
+            text-align: center;
+            /* Alinhamento Vertical */
+            vertical-align: top;
         }
-        td.dado-importante {
-            background-color: yellow;
+        .numero {
+            text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -41,25 +44,25 @@
                 TABLE DATA = dado de tabela
     -->
     <table>
-        <tr class="linha"> 
+        <tr> 
             <td>A1
             <td>B1
             <td>C1
 
         <tr>
             <td>A2
-            <td>B2
+            <td class="numero">993
             <td>C2 
 
         <tr>
             <td>A3
             <td>B3
-            <td>C3 
-                 
+            <td class="numero">300
+
         <tr>
             <td>A4
-            <td class="dado-importante">B4
-            <td>C4  
+            <td>B4
+            <td class="numero">002  
     </table>
 </body>
 </html>

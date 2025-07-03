@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: rgb(15, 158, 15);
+            padding: 10px;
+            background-image: url('imgs/nav-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav ul li, a {
+            font-weight: 900;
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+        }
+        
+
+        main {
+            flex: 1;
+            padding: 70px 0px;
+            background-image: url('imgs/sky-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+            text-align: center;
+        }
+        main table th, main table td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+        main table td {
+            font-size: 17px;
+        }
+        main table th {
+            font-size: 18px;
+        }
+        main table caption {
+            padding: 5px;
+            font-size: 18px;
+            border: 1px solid black;
+        }
+        footer {
+            background-color: #004F00;
+            color: white;
+            text-align: center;
+            font-size: 19px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><img src="imgs/logo-ficticia.png" style="width: 70px;"></li>
+                <li><a href="">Leituras</a></li>
+                <li><a href="">Graficos</a></li>
+                <li><a href="">Planilha</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <caption>
+                Histórico de Leituras
+            </caption>
+            <thead>
+                <tr>
+                    <th>Temperatura</th>
+                    <th>Pressão</th>
+                    <th>Umidade</th>
+                    <th>Tensão</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr><td>33.31</td><td>101160.44</td><td>55.52</td><td>3.49</td><td>30/06/2025, 18:30:24</td></tr>
+            <tr><td>31.31</td><td>101245.81</td><td>64.91</td><td>3.44</td><td>30/06/2025, 19:31:16</td></tr>
+            <tr><td>30.82</td><td>101271.68</td><td>61.39</td><td>3.35</td><td>30/06/2025, 20:32:07</td></tr>
+            <tr><td>30.43</td><td>101363.27</td><td>64.82</td><td>3.27</td><td>30/06/2025, 21:33:00</td></tr>
+            <tr><td>30.28</td><td>101408.27</td><td>67.21</td><td>3.19</td><td>30/06/2025, 22:33:48</td></tr>
+            <tr><td>30.38</td><td>101409.63</td><td>66.62</td><td>2.85</td><td>30/06/2025, 22:39:55</td></tr>
+            <tr><td>32.13</td><td>101495.61</td><td>62.97</td><td>3.35</td><td>02/07/2025, 08:27:20</td></tr>
+            <tr><td>41.51</td><td>101550.07</td><td>36.1</td><td>3.51</td><td>02/07/2025, 09:28:07</td></tr>
+            <tr><td>51.98</td><td>101574.78</td><td>19</td><td>3.46</td><td>02/07/2025, 10:28:59</td></tr>
+            <tr><td>54.27</td><td>101535.27</td><td>14.82</td><td>3.44</td><td>02/07/2025, 11:29:53</td></tr>
+            <tr><td>55.8</td><td>101440.04</td><td>12.94</td><td>3.41</td><td>02/07/2025, 12:30:40</td></tr>
+            <tr><td>53.33</td><td>101343.11</td><td>14.66</td><td>3.37</td><td>02/07/2025, 13:31:31</td></tr>
+        </tbody>
+
+        </table>
+    </main>
+    <footer>
+        <p>Site de teste de tabelas</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Design</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100vh;
+      font-family: 'Nunito', sans-serif;
+      background-color: white;
+    }
+
+    main {
+      padding: 60px;
+    }
+
+    .main-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 10px 10px 0px 0px;
+      overflow: hidden;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.396);
+      table-layout: fixed;
+    } .main-table caption {
+      color: #f59e42;
+      padding-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 20px;
+       border-bottom: 1px solid lightgrey;
+       text-shadow: 0px 0px 2px rgba(255, 115, 1, 0.808);
+    } .main-table th, .main-table td {
+      padding: 15px 30px;
+    } .main-table thead {
+      background-color: transparent;
+    } .main-table thead th {
+      background-color: #f59e42;
+      color: white;
+    } .main-table thead th:first-child {
+      border-top-left-radius: 10px;
+    } .main-table thead th:last-child {
+      border-top-right-radius: 10px;
+    } .main-table .num {
+      font-weight: bold;
+    } .main-table tbody tr:last-of-type {
+      border-bottom: 2px solid #f59e42;
+    } .main-table tbody tr {
+        border-bottom: 1px solid lightgrey;
+        transition: 0.5s;
+    }  .main-table tbody tr:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.396);
+        background-color: rgba(253, 230, 206, 0.363);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <table class="main-table">
+      <caption>Minha tabela HTML & CSS</caption>
+      <thead>
+        <tr>
+          <th>Numeration</th>
+          <th>Product</th>
+          <th>Qty</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="num">1</td>
+          <td>Shampoo</td>
+          <td>304</td>
+          <td>$7.99</td>
+        </tr>
+        <tr>
+          <td class="num">2</td>
+          <td>Sorvete</td>
+          <td>1290</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td class="num">3</td>
+          <td>Perfume</td>
+          <td>192</td>
+          <td>$28.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
