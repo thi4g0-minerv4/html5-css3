@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Buenos Aires</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lobster&display=swap');
+
+        body {
+            font-family: 'Lexend', Arial, Helvetica, sans-serif;
+        }
+        .responsive {
+            overflow-x: auto;
+            border-radius: 10px 10px;
+            
+        }
+        table {
+            margin: auto;
+            width: 70%;
+            border-collapse: collapse;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 10px 10px;
+
+        }
+        table th, table td {
+            padding: 10px;
+        }
+        table tr {
+            border-bottom: 1px solid lightgray;
+        } table .big-column {
+            border-left: 1px solid lightgray;
+        } table .line {
+            border-right: 1px solid antiquewhite
+        }
+        table  th {
+            font-weight: 200;
+            font-size: 1.2em;
+            font-family: 'Lobster';
+        }
+        table thead th{
+            background-color: antiquewhite;
+            color: rgba(0, 0, 0, 0.76);
+        }
+        table tbody th {
+            background-color: rgb(214, 255, 255);
+            color: rgba(0, 0, 0, 0.76);
+        }
+        table tbody td {
+            font-weight: 450;
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>ROTEIRO</th>
+                    <th>Manhã</th>
+                    <th>Dia</th>
+                    <th>Tarde</th>
+                    <th>Noite</th>
+                    <th  class="line">Madrugada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Quarta</th>
+                    <td>Dormir</td>
+                    <td>Almoçar casa da vó</td>
+                    <td>Arrumar as Malas</td>
+                    <td>Descansar</td>
+                    <td class="line">Ir para o aeroporto (00:00)</td>
+                </tr>
+                <tr>
+                    <th>Quinta</th>
+                    <td>Tierra Santa / Tres de Febrero (Ecoparque, Rosedal, Jardín Japonêses)</td>
+                    <td>Almoço Don Julio </td>
+                    <td>Checkin Hotel / Passeio pelo centro</td>
+                    <td>Confeteria Ideal</td>
+                    <td rowspan="8" class="big-column line">Dormir</td>
+                </tr>
+                <tr>
+                    <th>Sexta</th>
+                    <td>Plaza de Mayo / Congresso Nacional</td>
+                    <td>Pallacio Barolo / Calle Florida</td>
+                    <td>Ida rápida San Telmo / El Zanjón de Granados</td>
+                    <td>Puerto Madero / Madero Tango / Ponte de La Mujer</td>
+                </tr>
+                <tr>
+                    <th>Sábado</th>
+                    <td>Recoleta / Cemitério / Floralis Genérica / El Ateneo</td>
+                    <td>Palermo</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Domingo</th>
+                    <td>San Telmo Mercado / Feira San Telmo</td>
+                    <td>Almoço no Mercado Nacional</td>
+                    <td>Apresentação Teatro Colón</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Segunda</th>
+                    <td>Ida de Buquebus ao Uruguai</td>
+                    <td>Colônia del Sacramento (Uruguai)</td>
+                    <td>Colônia del Sacramento (Uruguai)</td>
+                    <td>Colônia del Sacramento (Uruguai)</td>
+                </tr>
+                <tr>
+                    <th>Terça</th>
+                    <td>La boca / La Bombonera / El Caminito</td>
+                    <td>-</td>
+                    <td>Voltar para o Hotel</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Quarta</th>
+                    <td>Ida para Tigre / Conhecer Tigre</td>
+                    <td>Delta Del Tigre</td>
+                    <td>Voltar para o Hotel</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <th>Quinta</th>
+                    <td>Acordar / Passeio Breve</td>
+                    <td>Arrumar as Malas</td>
+                    <td>Voltar para la casa</td>
+                    <td>Voo de volta para São Paulo!</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
