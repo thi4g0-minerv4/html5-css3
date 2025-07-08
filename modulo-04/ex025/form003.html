@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário Datas</h1>
+    <form action="teste.php" method="get" autocomplete="off">
+        <label for="inome">Nome do Aluno</label>
+        <input type="color" name="nome" id="inome" maxlength="60" placeholder="Nome Completo" required>
+        <br>
+        <br>
+        <label for="inota">Nota da Prova</label>
+        <input type="range" name="nota" id="inota" max="10" min="0" step="0.1" value="6" required >
+        <br>
+        <br>
+        <label for="imes">Mês do Inicio</label>
+        <input type="month" name="mes" id="imes" value="2025-07" required>
+        <br>
+        <br>
+        <label for="idata">Data da Entrega</label>
+        <input type="date" name="data" id="idata" value="2025-09-22" required>
+        <br>
+        <br>
+        <label for="ihora">Horário da Entrega</label>
+        <input type="time" name="hora" id="ihora" value="00:00" required>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        
+    </form>
+</body>
+</html>
