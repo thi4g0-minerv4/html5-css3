@@ -1,0 +1,15 @@
+.div-botao {
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
+.div-botao:hover {
+    background-color: rgb(201, 2, 2);
+    color: black;
+}
+.botao {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}

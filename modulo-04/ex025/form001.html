@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Formulários</title>
+</head>
+<body>
+    <!--
+    FORM (action= "arquivo_submit.php", method="get ou post")
+        LABEL (for = "id_input")
+        INPUT (type = "text", name="name_input", id="id_input")
+
+        INPUT (type = "submit", value="Enviar") ou BUTTON
+    
+    -->
+    <form action="registro.php" method="get" autocomplete="off">
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome">
+        
+        <label for="iidade">Idade:</label>
+        <input type="text" name="idade" id="iidade">
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
