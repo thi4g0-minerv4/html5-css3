@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários de Marcar</title>
+</head>
+<body>
+    <h1>Formulário de Check</h1>
+    <form action="seila.php" method="get">
+        <fieldset>
+            <legend>Informações do Jogador</legend>
+            <br>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Quiz</legend>
+            <h3>Que ano surgiu a primeira forma de Internet?</h3>
+            <input type="radio" name="ano-internet" id="1991" value="1991" required> <label for="1991">1991</label> <br>
+            <input type="radio" name="ano-internet" id="1999" value="1999"> <label for="1999">1999</label> <br>
+            <input type="radio" name="ano-internet" id="1945" value="1945"> <label for="1945">1945</label><br>
+            <input type="radio" name="ano-internet" id="1969" value="1969"> <label for="1969">1969</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Praticados</legend>
+            <input type="checkbox" name="basquete" id="basquete" checked> <label for="basquete">Basquete</label>
+            <br>
+            <input type="checkbox" name="futebol" id="futebol"> <label for="futebol">Futebol</label>
+            <br>
+            <input type="checkbox" name="artes-marcias" id="artes-marcias"> <label for="artes-marcias">Artes Marciais</label>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
