@@ -1,57 +1,31 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 20px;
+    height: 100vh;
 
-}
-
-h1 {
-    font-size: 3em;
-}
-textarea {
-    resize: none;
-    padding: 10px;
-    width: 80%;
-    margin: auto;
-    margin: 20px;
-    border: none;
-    border-radius: 20px;
-} textarea:focus {
-    outline: none;
-}
-p {
-    font-size: 1em;
+    background: #233EFF;
+    background-size: contain;
+    
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
-@media (min-width: 560px) {
-    h1 {
-        font-size: 4em;
-    }
-    p {
-        font-size: 1.5em;
+/* VERTICAL */
+
+@media (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
     }
 }
 
-@media (min-width: 660px) {
-    h1 {
-        font-size: 5em;
-    }
-    p {
-        font-size: 1.7em;
-    }
-}
+/* HORIZONTAL */
 
-@media (min-width: 950px) {
-    h1 {
-        font-size: 6em;
-    }
-    p {
-        font-size: 2em;
+@media (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
     }
 }
