@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar Hamburguer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="quandoClicar()">menu</i>
+        <menu id="navbar">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, velit harum? Porro sunt ratione animi! Adipisci dignissimos sequi voluptatum quia quibusdam pariatur blanditiis officiis, iure magni veniam corporis minima incidunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cum, perferendis tenetur, pariatur, dolorem unde vero nemo ex nostrum itaque voluptatem excepturi mollitia tempore consequuntur suscipit quasi ab. Animi, necessitatibus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum architecto officiis, nesciunt facilis sint tempora neque! Labore minima autem nulla optio eligendi eum animi, temporibus quae harum, quas enim! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus quod libero ipsam reprehenderit et, repellendus incidunt odio deleniti animi fugiat cumque commodi saepe vero ipsum. Cum beatae ipsa at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus amet officia eos odio commodi! Tempore quia accusamus quibusdam quaerat sit doloremque quo excepturi accusantium iusto odio, ullam dolorem magnam. Aspernatur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore at sunt ipsum repudiandae eligendi? Magni, repellendus quos, quae eveniet cupiditate quod nesciunt provident, similique voluptates saepe eius quam officia asperiores! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ullam, harum perferendis inventore voluptate vel reprehenderit possimus dicta? Corrupti incidunt qui illum rem commodi excepturi hic eveniet dolore magnam reprehenderit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ipsam ex. Dolore sint quidem possimus consectetur quaerat et corporis qui, voluptate dolorem consequuntur nulla libero, beatae odit vel minus sunt.</p>
+        </article>
+    </main>
+    <script>
+        function quandoClicar() {
+            if (navbar.style.display == "block") {
+                navbar.style.display = "none"
+            } else {
+                navbar.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

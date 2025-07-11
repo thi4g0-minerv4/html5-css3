@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    background-image: url(../imagens/back-phone.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 5px 5px black;
+    height: 100vh;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.637);
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+}
+img {
+    margin: auto;
+}
+
+img#mobile  {display: block;}
+img#tv {display: none;}
+img#pc {display: none;}
+img#print {display: none;}
+img#tablet  {display: none;}
+
+
+@media screen and (min-width: 600px){ /* Tela Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#mobile  {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tablet  {display: block;}
+}
+
+@media screen and (min-width: 992px) { /* Tela PC */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#mobile  {display: none;}
+    img#tv {display: none;}
+    img#pc {display: block;}
+    img#print {display: none;}
+    img#tablet  {display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#mobile  {display: none;}
+    img#tv {display: block;}
+    img#pc {display: none;}
+    img#print {display: none;}
+    img#tablet  {display: none;}    
+}
+
+@media print {
+    body {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+    }
+    img#mobile  {display: none;}
+    img#tv {display: none;}
+    img#pc {display: none;}
+    img#print {display: block;}
+    img#tablet  {display: none;}       
+}
