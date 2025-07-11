@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body  onresize="quandoAumentar()">
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="quandoClicar()">menu</i>
@@ -28,6 +28,13 @@
         </article>
     </main>
     <script>
+        function quandoAumentar() {
+            if (window.innerWidth >= 600) {
+                navbar.style.display = 'block'
+            } else {
+                navbar.style.display = 'none'
+            }
+        }
         function quandoClicar() {
             if (navbar.style.display == "block") {
                 navbar.style.display = "none"
