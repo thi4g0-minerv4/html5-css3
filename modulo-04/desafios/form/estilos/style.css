@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#159779; 
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    background-color: white;
+    color: rgb(130, 130, 130);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 18px;
+    border-radius: 8px;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.1s;
+} form input:focus, form textarea:focus {
+    outline: none;
+    border: 2px solid #159779;
+}
+form textarea {
+    resize: none;
+}
+
+form button {
+    background-color: #32AD26;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 0px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.2s;
+}
+form button:hover, form button:focus {
+    background-color: #28911f;
+    transform: scale(1.01);
+    outline: none;
+}
+
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: rgb(240, 198, 120);
+    }
+    form input:focus, form textarea:focus {
+        border: 2px solid rgb(255, 185, 54);
+    }
+    form textarea {
+        height: 150px;
+    }
+    form button {
+        background-color: rgb(93, 171, 254);
+    }
+    form button:hover, form button:focus {
+        background-color: rgb(51, 150, 255);
+    }
+}
